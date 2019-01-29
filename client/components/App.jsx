@@ -3,30 +3,7 @@ import Pixel from './Pixel'
 
 const App = () => {
   return (
-    <div>
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-      <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel /> <Pixel />
-    </div>
-    
+    Array.from({ length: 100000 }, () => <Pixel />)
   )
 }
 
