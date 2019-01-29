@@ -31,10 +31,19 @@ class Pixel extends React.Component {
             }
          })
      }
+     onDrag = evt => {
+        this.setState({
+           style: {
+               height: '60px', 
+           width: '50px',
+           backgroundColor: 'pink'
+           }
+        })
+    }
     render () {
         return (
             
-            <div onClick={this.clickHandler} onMouseLeave={this.mouseHover} style={this.state.style}></div>
+            <div onDrag={this.onDrag} onClick={this.clickHandler} onMouseLeave={this.mouseHover} style={this.state.style}></div>
         )
     }
 }
