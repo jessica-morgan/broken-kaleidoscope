@@ -15,10 +15,18 @@ class Pixel extends React.Component {
             backgroundColor: randomHexColor()
         }
     }
-
+    clickHandler = evt => {
+        console.log(this.state)
+        this.setState({
+           // ...this.state.style this doesn't work with webpack
+           style: Object.assign({}, this.state.style, {backgroundColor: randomHexColor()})
+        })
+      }
+    
     render () {
         return (
-            <div style={this.state.style}></div>
+            
+            <div onClick={this.clickHandler} style={this.state.style}></div>
         )
     }
 }
