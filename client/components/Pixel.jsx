@@ -1,4 +1,5 @@
 import React from 'react'
+import { green, greenBright, yellowBright, black } from 'ansi-colors';
 
 const randomHexColor = () =>
         `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
@@ -16,17 +17,24 @@ class Pixel extends React.Component {
         }
     }
     clickHandler = evt => {
-        console.log(this.state)
         this.setState({
-           // ...this.state.style this doesn't work with webpack
+           // ...this.state.style spread operator doesn't work with webpack
            style: Object.assign({}, this.state.style, {backgroundColor: randomHexColor()})
         })
       }
-    
+     mouseHover = evt => {
+         this.setState({
+            style: {
+                height: '60px', 
+            width: '50px',
+            backgroundColor: 'green'
+            }
+         })
+     }
     render () {
         return (
             
-            <div onClick={this.clickHandler} style={this.state.style}></div>
+            <div onClick={this.clickHandler} onMouseLeave={this.mouseHover} style={this.state.style}></div>
         )
     }
 }
